@@ -3,43 +3,65 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>My Website</title>
+<title>Modern Landing Page</title>
 <style>
-    body{
-        margin:0;
-        font-family:Arial,sans-serif;
-        background:#f4f4f4;
-        display:flex;
-        justify-content:center;
-        align-items:center;
-        height:100vh;
-    }
-    .card{
-        text-align:center;
-        background:white;
-        padding:40px;
-        border-radius:12px;
-        box-shadow:0 4px 15px rgba(0,0,0,.1);
-    }
-    h1{color:#333;}
-    p{color:#666;}
-    a{
-        display:inline-block;
-        margin-top:15px;
-        padding:10px 20px;
-        background:#007bff;
-        color:white;
-        text-decoration:none;
-        border-radius:6px;
-    }
-    a:hover{background:#0056b3;}
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Segoe UI',sans-serif;
+}
+body{
+    min-height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    background:linear-gradient(135deg,#667eea,#764ba2);
+}
+.card{
+    width:90%;
+    max-width:700px;
+    padding:50px;
+    text-align:center;
+    color:white;
+    backdrop-filter:blur(15px);
+    background:rgba(255,255,255,0.1);
+    border:1px solid rgba(255,255,255,0.2);
+    border-radius:24px;
+    box-shadow:0 20px 40px rgba(0,0,0,.25);
+}
+h1{
+    font-size:3rem;
+    margin-bottom:15px;
+}
+p{
+    font-size:1.1rem;
+    opacity:.9;
+    margin-bottom:30px;
+}
+.btn{
+    display:inline-block;
+    padding:14px 32px;
+    background:white;
+    color:#764ba2;
+    text-decoration:none;
+    border-radius:50px;
+    font-weight:600;
+    transition:.3s;
+}
+.btn:hover{
+    transform:translateY(-3px);
+    box-shadow:0 10px 20px rgba(255,255,255,.25);
+}
 </style>
 </head>
 <body>
+
 <div class="card">
-    <h1>Welcome</h1>
-    <p>Simple, fast, and responsive static website.</p>
-    <a href="#">Get Started</a>
+    <h1>Build Something Amazing</h1>
+    <p>Elegant, responsive, and lightweight static website design.</p>
+    <a href="#" class="btn">Explore Now</a>
 </div>
+
 </body>
 </html>
